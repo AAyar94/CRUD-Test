@@ -3,8 +3,8 @@ import model.Student;
 
 public class StudentHelper {
 
-    private Student[] students = new Student[10];
-    private int lastIndex = 0;
+    private static Student[] students = new Student[10];
+    private static int lastIndex = 0;
 
     static void createStudent(int id,
                               String name,
@@ -12,8 +12,8 @@ public class StudentHelper {
                               String gender,
                               String department,
                               int grade,
-                              Lesson[] lessons)
-    {
+                              Lesson[] lessons
+    ){
         if(lastIndex >= 10){
             System.out.println("Öğrenci kontenjanına ulaşıldı.");
             return;
@@ -30,6 +30,7 @@ public class StudentHelper {
     void deleteStudent() {
 
     }
+
     Student[] getAllStudent(){
         return students;
 

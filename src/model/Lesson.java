@@ -29,5 +29,12 @@ public class Lesson {
         this.score = score;
     }
 
-
+    @Override
+    public String toString() {
+        return "Lesson{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", score=" + score +
+                '}';
+    }
 }
