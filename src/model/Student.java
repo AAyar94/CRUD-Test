@@ -23,6 +23,9 @@ public class Student extends Person {
         setLessons(lessons);
     }
 
+    public Student(int id) {
+    }
+
     public String getDepartment() {
         return department;
     }

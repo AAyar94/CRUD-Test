@@ -1,6 +1,8 @@
 import model.Lesson;
 import model.Student;
 
+import java.util.Scanner;
+
 public class StudentHelper {
 
     private static Student[] students = new Student[10];
@@ -36,4 +38,6 @@ public class StudentHelper {
 
     }
 
+    public void collectNewStudentData(Student person, Scanner scannerMenu) {
+    }
 }
